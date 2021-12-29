@@ -1,3 +1,49 @@
+.footer {
+  &__info {
+  }
+
+  &__contacts {
+  }
+
+  &__location {
+  }
+
+  &__number {
+  }
+
+  &__mail {
+  }
+
+  &__menu {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+
+  &__social {
+    &--icons {
+    }
+
+    &--list {
+    }
+
+    &--item {
+    }
+
+    &--link {
+    }
+  }
+
+  &__copyright {
+  }
+}
+
 &__attribution {
   width: 100%;
   font-size: clamp(1.2rem, 2vw, 1.4rem);
