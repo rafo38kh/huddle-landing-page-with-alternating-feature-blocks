@@ -1,15 +1,26 @@
+@use "../abstracts/index" as *;
 .huddle {
   &__header {
+    background-image: url("./../../images/bg-hero-mobile.svg");
+    background-color: $color-veryPaleCyan;
+    background-size: cover;
   }
 
   &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
+    width: 10rem;
     &--header {
     }
 
     &--footer {
+      width: 15rem;
+      margin-bottom: 2rem;
+      filter: brightness(0) invert(1);
     }
   }
 
@@ -21,17 +32,28 @@
 
   &__title {
     &--primary {
+      font-size: 2.4rem;
+      max-width: 34rem;
+      padding: 9rem 2rem 3rem;
     }
     &--secondary {
+      font-size: 2rem;
+      margin: 5rem 0 2rem;
     }
+
     &--tertiary {
     }
   }
 
   &__subtitle {
+    font-size: 1.6rem;
+    font-weight: 400;
     &--primary {
+      padding: 0 1.5rem;
     }
     &--secondary {
+      color: $color-grayishBlue;
+      font-size: 1.4rem;
     }
     &--tertiary {
     }
@@ -44,8 +66,17 @@
   }
 
   &__cards {
+    position: relative;
+    width: 90%;
+    max-width: 73rem;
+    margin: 0 auto;
+    padding: 6rem 0 20rem 0;
   }
 
   &__card {
+    border-radius: 2rem;
+    margin-bottom: 4rem;
+    padding: 4rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   }
 }

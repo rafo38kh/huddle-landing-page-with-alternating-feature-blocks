@@ -1,0 +1,226 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background-color: #fff;
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.huddle__button {
+  background-color: #fff;
+  border: 0.1rem solid transparent;
+  border-radius: 3rem;
+  width: 10rem;
+  padding: 0.4rem 0;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.huddle__button--secondary {
+  width: 25rem;
+  padding: 1.2rem 0;
+  font-size: 1.2rem;
+  background-color: #ff52bf;
+  color: #fff;
+  margin: 5rem 0;
+}
+.huddle__button--tertiary {
+  width: 25rem;
+  padding: 1.2rem 0;
+  font-size: 1.2rem;
+  background-color: #ff52bf;
+  color: #fff;
+}
+
+.huddle__header {
+  background-image: url("./../../images/bg-hero-mobile.svg");
+  background-color: #ebfbff;
+  background-size: cover;
+}
+.huddle__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.huddle__logo {
+  width: 10rem;
+}
+.huddle__logo--footer {
+  width: 15rem;
+  margin-bottom: 2rem;
+  filter: brightness(0) invert(1);
+}
+.huddle__title--primary {
+  font-size: 2.4rem;
+  max-width: 34rem;
+  padding: 9rem 2rem 3rem;
+}
+.huddle__title--secondary {
+  font-size: 2rem;
+  margin: 5rem 0 2rem;
+}
+.huddle__subtitle {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.huddle__subtitle--primary {
+  padding: 0 1.5rem;
+}
+.huddle__subtitle--secondary {
+  color: #808d99;
+  font-size: 1.4rem;
+}
+.huddle__cards {
+  position: relative;
+  width: 90%;
+  max-width: 73rem;
+  margin: 0 auto;
+  padding: 6rem 0 20rem 0;
+}
+.huddle__card {
+  border-radius: 2rem;
+  margin-bottom: 4rem;
+  padding: 4rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.container {
+  width: 90%;
+  max-width: 73rem;
+  margin: 0 auto;
+  padding: 2.5rem 0 4rem 0;
+}
+
+.community__card {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 4rem 0;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  bottom: -6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 35rem;
+}
+.community__question {
+  margin-bottom: 3rem;
+}
+
+.footer {
+  background-color: #00252e;
+  padding: 15rem 2rem 5rem 2rem;
+  color: #ebfbff;
+  text-align: left;
+}
+.footer__contacts {
+  padding: 0 0 0 4rem;
+}
+.footer__location {
+  position: relative;
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+.footer__location::before {
+  content: url("./../../images/icon-location.svg");
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0.5rem;
+  left: -4rem;
+}
+.footer__number {
+  position: relative;
+  margin-bottom: 2rem;
+}
+.footer__number::before {
+  content: url("./../../images/icon-phone.svg");
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0.5rem;
+  left: -4rem;
+}
+.footer__mail {
+  position: relative;
+}
+.footer__mail::before {
+  content: url("./../../images/icon-email.svg");
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  top: 0.5rem;
+  left: -4rem;
+}
+.footer__list {
+  list-style: none;
+  margin: 6rem 0;
+  font-size: 1.8rem;
+}
+.footer__item {
+  margin-bottom: 2rem;
+}
+.footer__link:link, .footer__link:visited {
+  color: #ebfbff;
+  text-decoration: none;
+}
+.footer__social--list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.footer__social--link {
+  border: 0.1rem solid #ebfbff;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.footer__social--link svg path {
+  fill: #ebfbff;
+}
+.footer__social--link svg {
+  width: 2rem;
+  height: 1.5rem;
+}
+.footer__copyright {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-top: 3rem;
+}
+.footer__attribution {
+  width: 100%;
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  text-align: center;
+  margin: 0 auto;
+  padding: 0rem 0 1rem 0;
+}
+.footer__attribution-link:link, .footer__attribution-link:visited {
+  text-transform: uppercase;
+  color: #ff52bf;
+  text-decoration: none;
+  font-weight: 400;
+}
+.footer__attribution-link:hover, .footer__attribution-link:active {
+  color: #ff52bf;
+  text-decoration: underline;
+}
+
+/*# sourceMappingURL=style.css.map */

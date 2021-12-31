@@ -1,29 +1,78 @@
+@use "../abstracts/index" as *;
+
 .footer {
+  background-color: $color-veryDarkCyan;
+  padding: 15rem 2rem 5rem 2rem;
+  color: $color-veryPaleCyan;
+  text-align: left;
   &__info {
   }
 
   &__contacts {
+    padding: 0 0 0 4rem;
   }
 
   &__location {
+    position: relative;
+    margin-bottom: 2rem;
+    line-height: 2.5rem;
+
+    &::before {
+      content: url("./../../images/icon-location.svg");
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      top: 0.5rem;
+      left: -4rem;
+    }
   }
 
   &__number {
+    position: relative;
+    margin-bottom: 2rem;
+
+    &::before {
+      content: url("./../../images/icon-phone.svg");
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      top: 0.5rem;
+      left: -4rem;
+    }
   }
 
   &__mail {
+    position: relative;
+
+    &::before {
+      content: url("./../../images/icon-email.svg");
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      top: 0.5rem;
+      left: -4rem;
+    }
   }
 
   &__menu {
   }
 
   &__list {
+    list-style: none;
+    margin: 6rem 0;
+    font-size: 1.8rem;
   }
 
   &__item {
+    margin-bottom: 2rem;
   }
 
   &__link {
+    &:link,
+    &:visited {
+      color: $color-veryPaleCyan;
+      text-decoration: none;
+    }
   }
 
   &__social {
@@ -31,37 +80,57 @@
     }
 
     &--list {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
     }
 
     &--item {
     }
 
     &--link {
+      border: 0.1rem solid $color-veryPaleCyan;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+
+    &--link svg path {
+      fill: $color-veryPaleCyan;
+    }
+
+    &--link svg {
+      width: 2rem;
+      height: 1.5rem;
     }
   }
 
   &__copyright {
-  }
-}
-
-&__attribution {
-  width: 100%;
-  font-size: clamp(1.2rem, 2vw, 1.4rem);
-  text-align: center;
-  margin: 0 auto;
-  padding: 0rem 0 1rem 0;
-
-  &-link:link,
-  &-link:visited {
-    text-transform: uppercase;
-    color: $color-primary;
-    text-decoration: none;
-    font-weight: 400;
+    font-size: 1.1rem;
+    text-align: center;
+    margin-top: 3rem;
   }
 
-  &-link:hover,
-  &-link:active {
-    color: $color-primary;
-    text-decoration: underline;
+  &__attribution {
+    width: 100%;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    text-align: center;
+    margin: 0 auto;
+    padding: 0rem 0 1rem 0;
+
+    &-link:link,
+    &-link:visited {
+      text-transform: uppercase;
+      color: $color-button;
+      text-decoration: none;
+      font-weight: 400;
+    }
+
+    &-link:hover,
+    &-link:active {
+      color: $color-button;
+      text-decoration: underline;
+    }
   }
 }

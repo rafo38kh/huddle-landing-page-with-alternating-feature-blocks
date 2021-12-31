@@ -1,3 +1,5 @@
+@use "../abstracts/index" as *;
+
 *,
 *::before,
 *::after {
@@ -10,9 +12,15 @@ html {
   font-size: 62.5%;
   box-sizing: border-box;
 }
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
 
 body {
+  background-color: #fff;
   font-size: 1.6rem;
-  font-family: "Open Sans", sans-serif; //  Weights: 400, 700
-  font-family: "Poppins", sans-serif; //  Weights: 600
+  font-family: $font--secondary;
+  text-align: center;
 }

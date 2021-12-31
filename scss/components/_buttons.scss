@@ -1,10 +1,32 @@
+@use "../abstracts/index" as *;
+
 .huddle {
   &__button {
+    background-color: #fff;
+    border: 0.1rem solid transparent;
+    border-radius: 3rem;
+    width: 10rem;
+    padding: 0.4rem 0;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     &--primary {
     }
     &--secondary {
+      width: 25rem;
+      padding: 1.2rem 0;
+      font-size: 1.2rem;
+      background-color: $color-button;
+      color: #fff;
+      margin: 5rem 0;
     }
     &--tertiary {
+      width: 25rem;
+      padding: 1.2rem 0;
+      font-size: 1.2rem;
+      background-color: $color-button;
+      color: #fff;
+      //   margin: 5rem 0;
     }
   }
 }

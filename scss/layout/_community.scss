@@ -1,7 +1,19 @@
+@use "../abstracts/index" as *;
+
 .community {
   &__card {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 2rem;
+    padding: 4rem 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    bottom: -6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 35rem;
   }
 
   &__question {
+    margin-bottom: 3rem;
   }
 }
