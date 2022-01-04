@@ -1,9 +1,16 @@
 .users {
   &__card {
   }
+
   &__text-wrapper {
+    @media (min-width: 810px) {
+      max-width: 40%;
+    }
   }
 
   &__picture {
+    @media (min-width: 810px) {
+      max-width: 40%;
+    }
   }
 }

@@ -5,11 +5,22 @@
   padding: 15rem 2rem 5rem 2rem;
   color: $color-veryPaleCyan;
   text-align: left;
+
   &__info {
+    @media (min-width: 810px) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      max-width: 85%;
+      margin: 0 auto;
+    }
   }
 
   &__contacts {
     padding: 0 0 0 4rem;
+    @media (min-width: 810px) {
+      font-size: 1.5rem;
+      width: 90%;
+    }
   }
 
   &__location {
@@ -61,6 +72,12 @@
     list-style: none;
     margin: 6rem 0;
     font-size: 1.8rem;
+    @media (min-width: 810px) {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+      margin: 0;
+      font-size: 1.5rem;
+    }
   }
 
   &__item {
@@ -76,6 +93,11 @@
   }
 
   &__social {
+    @media (min-width: 810px) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
     &--icons {
     }
 
@@ -106,6 +128,12 @@
     }
   }
 
+  &__wrapper {
+    @media (min-width: 810px) {
+      font-size: 1.5rem;
+    }
+  }
+
   &__copyright {
     font-size: 1.1rem;
     text-align: center;
@@ -114,10 +142,11 @@
 
   &__attribution {
     width: 100%;
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: clamp(1rem, 2vw, 1.4rem);
+    font-size: 1rem;
     text-align: center;
     margin: 0 auto;
-    padding: 0rem 0 1rem 0;
+    // padding: 0rem 0 1rem 0;
 
     &-link:link,
     &-link:visited {

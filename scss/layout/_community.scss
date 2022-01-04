@@ -11,6 +11,9 @@
     left: 50%;
     transform: translateX(-50%);
     min-width: 35rem;
+    @media (min-width: 810px) {
+      width: 50%;
+    }
   }
 
   &__question {
