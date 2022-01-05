@@ -27,19 +27,29 @@ body {
 .huddle__button {
   background-color: #fff;
   border: 0.1rem solid transparent;
-  border-radius: 3rem;
+  border-radius: 5rem;
   width: 10rem;
   padding: 0.4rem 0;
   font-weight: 700;
   font-size: 1.1rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.3s;
+}
+.huddle__button:hover {
+  cursor: pointer;
+  color: #ebfbff;
+  opacity: 0.6;
 }
 @media (min-width: 1140px) {
   .huddle__button {
     width: 20rem;
-    padding: 1.5rem 0;
-    font-size: 1.5rem;
+    padding: 1.4rem 0;
+    font-size: 1.4rem;
   }
+}
+.huddle__button--primary:hover {
+  color: #808d99;
+  opacity: 0.9;
 }
 .huddle__button--secondary {
   width: 25rem;
@@ -49,6 +59,13 @@ body {
   color: #fff;
   margin: 5rem 0;
 }
+@media (min-width: 1140px) {
+  .huddle__button--secondary {
+    width: 28rem;
+    padding: 1.6rem 0;
+    font-size: 1.5rem;
+  }
+}
 .huddle__button--tertiary {
   width: 25rem;
   padding: 1.2rem 0;
@@ -56,16 +73,33 @@ body {
   background-color: #ff52bf;
   color: #fff;
 }
+@media (min-width: 1140px) {
+  .huddle__button--tertiary {
+    width: 40rem;
+    padding: 2.6rem 0;
+    font-size: 2rem;
+  }
+}
 
 .huddle__header {
   background-image: url("./../../images/bg-hero-mobile.svg");
   background-color: #ebfbff;
   background-size: cover;
 }
+@media (min-width: 810px) {
+  .huddle__header {
+    background-image: url("./../../images/bg-hero-desktop.svg");
+  }
+}
 .huddle__menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media (min-width: 1140px) {
+  .huddle__menu {
+    margin-bottom: 6rem;
+  }
 }
 .huddle__logo {
   width: 10rem;
@@ -108,7 +142,7 @@ body {
   }
 }
 .huddle__title--secondary {
-  font-size: 2rem;
+  font-size: clamp(2rem, 2.5vw, 2.8rem);
   margin: 5rem 0 2rem;
 }
 @media (min-width: 810px) {
@@ -118,6 +152,7 @@ body {
 }
 .huddle__subtitle {
   font-size: clamp(1.6rem, 1.6vw, 1.7rem);
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
 }
 .huddle__subtitle--primary {
@@ -130,16 +165,25 @@ body {
 }
 .huddle__subtitle--secondary {
   color: #808d99;
-  font-size: 1.4rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.8rem);
 }
 @media (min-width: 810px) {
   .huddle__poster {
     align-self: center;
   }
 }
+@media (min-width: 1140px) {
+  .huddle__poster {
+    width: 90%;
+    justify-self: end;
+  }
+}
+.huddle__main {
+  font-family: "Poppins", sans-serif;
+}
 .huddle__cards {
   position: relative;
-  width: 90%;
+  width: 89%;
   max-width: 73rem;
   margin: 0 auto;
   padding: 6rem 0 20rem 0;
@@ -147,6 +191,11 @@ body {
 @media (min-width: 810px) {
   .huddle__cards {
     max-width: unset;
+  }
+}
+@media (min-width: 1140px) {
+  .huddle__cards {
+    padding: 6rem 0 32rem 0;
   }
 }
 .huddle__card {
@@ -157,8 +206,7 @@ body {
 }
 @media (min-width: 810px) {
   .huddle__card {
-    max-width: 85%;
-    margin: 0 auto;
+    margin: 4rem auto;
   }
 }
 @media (min-width: 810px) {
@@ -179,13 +227,19 @@ body {
 }
 @media (min-width: 810px) {
   .container {
-    max-width: 85%;
+    max-width: 89%;
+  }
+}
+@media (min-width: 1140px) {
+  .container {
+    padding: 5rem 0;
   }
 }
 
 @media (min-width: 810px) {
   .grow__text-wrapper {
-    max-width: 40%;
+    max-width: 45%;
+    padding-left: 4rem;
   }
 }
 @media (min-width: 810px) {
@@ -199,7 +253,8 @@ body {
 }
 @media (min-width: 810px) {
   .flowing__text-wrapper {
-    max-width: 40%;
+    max-width: 45%;
+    padding-right: 4rem;
   }
 }
 @media (min-width: 810px) {
@@ -210,7 +265,8 @@ body {
 
 @media (min-width: 810px) {
   .users__text-wrapper {
-    max-width: 40%;
+    max-width: 45%;
+    padding-left: 4rem;
   }
 }
 @media (min-width: 810px) {
@@ -222,7 +278,7 @@ body {
 .community__card {
   position: absolute;
   background-color: #fff;
-  border-radius: 2rem;
+  border-radius: 1.5rem;
   padding: 4rem 0;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   bottom: -6rem;
@@ -232,7 +288,14 @@ body {
 }
 @media (min-width: 810px) {
   .community__card {
-    width: 50%;
+    width: 62%;
+  }
+}
+@media (min-width: 1140px) {
+  .community__card {
+    font-size: 3rem;
+    padding: 6rem;
+    bottom: -8rem;
   }
 }
 .community__question {
@@ -248,7 +311,7 @@ body {
 @media (min-width: 810px) {
   .footer__info {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     max-width: 85%;
     margin: 0 auto;
   }
@@ -306,7 +369,7 @@ body {
 @media (min-width: 810px) {
   .footer__list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     margin: 0;
     font-size: 1.5rem;
   }
@@ -314,15 +377,35 @@ body {
 .footer__item {
   margin-bottom: 2rem;
 }
+.footer__link {
+  position: relative;
+}
 .footer__link:link, .footer__link:visited {
   color: #ebfbff;
   text-decoration: none;
+}
+.footer__link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.1rem;
+  left: 0;
+  bottom: 0;
+  background-color: #ebfbff;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.footer__link:active::after, .footer__link:hover::after {
+  visibility: visible;
+  opacity: 1;
 }
 @media (min-width: 810px) {
   .footer__social {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: flex-start;
   }
 }
 .footer__social--list {
@@ -332,17 +415,27 @@ body {
   align-items: center;
   gap: 2rem;
 }
-.footer__social--link {
-  border: 0.1rem solid #ebfbff;
-  padding: 0.5rem;
-  border-radius: 50%;
+@media (min-width: 1140px) {
+  .footer__social--list {
+    justify-content: flex-start;
+  }
 }
 .footer__social--link svg path {
   fill: #ebfbff;
 }
 .footer__social--link svg {
-  width: 2rem;
-  height: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  border: 0.1rem solid #ebfbff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.footer__social--link svg:hover {
+  border: 0.1rem solid #ff52bf;
+}
+.footer__social--link svg:hover--link svg path {
+  fill: #ff52bf;
 }
 @media (min-width: 810px) {
   .footer__wrapper {
@@ -353,6 +446,12 @@ body {
   font-size: 1.1rem;
   text-align: center;
   margin-top: 3rem;
+}
+@media (min-width: 810px) {
+  .footer__copyright {
+    text-align: left;
+    margin: 0;
+  }
 }
 .footer__attribution {
   width: 100%;

@@ -4,7 +4,7 @@
   &__card {
     position: absolute;
     background-color: #fff;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     padding: 4rem 0;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     bottom: -6rem;
@@ -12,7 +12,13 @@
     transform: translateX(-50%);
     min-width: 35rem;
     @media (min-width: 810px) {
-      width: 50%;
+      width: 62%;
+    }
+
+    @media (min-width: 1140px) {
+      font-size: 3rem;
+      padding: 6rem;
+      bottom: -8rem;
     }
   }
 

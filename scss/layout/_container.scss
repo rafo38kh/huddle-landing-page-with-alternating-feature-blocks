@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 2.5rem 0 4rem 0;
   @media (min-width: 810px) {
-    max-width: 85%;
+    max-width: 89%;
+  }
+
+  @media (min-width: 1140px) {
+    padding: 5rem 0;
   }
 }

@@ -4,18 +4,30 @@
   &__button {
     background-color: #fff;
     border: 0.1rem solid transparent;
-    border-radius: 3rem;
+    border-radius: 5rem;
     width: 10rem;
     padding: 0.4rem 0;
     font-weight: 700;
     font-size: 1.1rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 0.3s;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-veryPaleCyan;
+      opacity: 0.6;
+    }
+
     @media (min-width: 1140px) {
       width: 20rem;
-      padding: 1.5rem 0;
-      font-size: 1.5rem;
+      padding: 1.4rem 0;
+      font-size: 1.4rem;
     }
     &--primary {
+      &:hover {
+        color: $color-grayishBlue;
+        opacity: 0.9;
+      }
     }
     &--secondary {
       width: 25rem;
@@ -24,6 +36,12 @@
       background-color: $color-button;
       color: #fff;
       margin: 5rem 0;
+
+      @media (min-width: 1140px) {
+        width: 28rem;
+        padding: 1.6rem 0;
+        font-size: 1.5rem;
+      }
     }
     &--tertiary {
       width: 25rem;
@@ -32,6 +50,12 @@
       background-color: $color-button;
       color: #fff;
       //   margin: 5rem 0;
+
+      @media (min-width: 1140px) {
+        width: 40rem;
+        padding: 2.6rem 0;
+        font-size: 2rem;
+      }
     }
   }
 }
