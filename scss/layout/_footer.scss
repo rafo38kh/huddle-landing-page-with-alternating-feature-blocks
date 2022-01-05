@@ -74,7 +74,6 @@
     font-size: 1.8rem;
     @media (min-width: 810px) {
       display: grid;
-      // grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
       grid-template-columns: repeat(2, 1fr);
       margin: 0;
       font-size: 1.5rem;
@@ -187,7 +186,6 @@
     font-size: 1rem;
     text-align: center;
     margin: 0 auto;
-    // padding: 0rem 0 1rem 0;
 
     &-link:link,
     &-link:visited {
